@@ -5,15 +5,15 @@ from pandas import ExcelFile
 
 def analyze():
     m = folium.Map([29.22889, 45], zoom_start=5)
-    countryData = pd.read_csv("C:\\Users\\fancy\Desktop\Class\\UN Armed Conflict\choropleth code\dataSmall.csv")
+    countryData = pd.read_csv("dataSmall.csv")
     m.choropleth(
-        geo_data=open("C:\\Users\\fancy\Desktop\Class\\UN Armed Conflict\choropleth code\countries.json").read(),
+        geo_data=open("countries.json").read(),
         data=countryData,
         columns=['Country', 'Value'],
         key_on='feature.id',
         fill_color='YlGn',
         )
-    df = pd.read_excel("C:\\Users\\fancy\Desktop\Class\\UN Armed Conflict\choropleth code\\newdata.xlsx", sheet_name='Sheet1')
+    df = pd.read_excel("newdata.xlsx", sheet_name='Sheet1')
 
     for n in range(13):
         name = df['Row Labels'][n]
