@@ -1,2 +1,6 @@
-This is the first iteration of the ACAP website, which shows the basic layout of what the site should look like: A basic intro for the project, a section for a layed choropleth map, and a section for rate of change charts (not completed). The python code used is code1.py, a very bare-bones version of a choropleth map.
+This is the first iteration of the ACAP website, which shows the basic layout of what the site should look like: 
+     a basic intro for the project
+     a section for a layed choropleth map
+     and a section for rate of change charts (not completed)
+The python code used is code1.py, a very bare-bones version of a choropleth map.
 The app can be seen by running flask on cmd. Set the FLASK_APP=main.py and run flask. The demo should run on your browswer.
